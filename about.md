@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm Erik. I have a daughter, a wife, a house. I do programming for a living, and sometimes as a hobby. I should probably add more stuff here sometime. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[forsberg@efod.se](mailto:forsberg@efod.se)
