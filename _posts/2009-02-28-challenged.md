@@ -6,7 +6,7 @@ redirect_from: /blog/archive/2009/02/28/challenged
 ---
 
 ![Bear at Kolmårdens
-Djurpark](/media/blog/photochallenge/img_3886_webcrop.jpg) \
+Djurpark](/images/django2jekyll/blog/photochallenge/img_3886_webcrop.jpg) \
 You talkin' to me? A Blog Challenge? Eh? (Bear, Kolmården Zoo, 2005)
 
 [I have received a
