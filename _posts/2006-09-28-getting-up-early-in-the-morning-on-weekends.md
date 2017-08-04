@@ -5,7 +5,8 @@ tags: [photography]
 redirect_from: /blog/archive/2006/09/28/getting-up-early-in-the-morning-on-weekends
 ---
 
-![image]({{ MEDIA_URL }}/migrated/images-crw_7438_rotate_small.jpg)
+![image](/images/django2jekyll/migrated/images-crw_7438_rotate_small.jpg)
+
 ...can sometimes be rewarding. Sunday morning this week I went up at 7
 in the morning and got into the car driving down to the summer hut. The
 image to the right is one of the results.
