@@ -1,0 +1,892 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    <title>
+        INSTALL.txt
+        &mdash;
+        efod.se
+    </title>
+
+    
+      
+        <base href="http://efod.se/software/lyscvs/INSTALL.txt" />
+      
+    
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+
+    <!-- Plone ECMAScripts -->
+    
+        
+            
+                <script type="text/javascript"
+                        src="http://efod.se/portal_javascripts/EFODSkin/ploneScripts5768.js">
+                </script>
+                
+            
+            
+                <script type="text/javascript"
+                        src="http://efod.se/portal_javascripts/EFODSkin/ploneScripts8746.js">
+                </script>
+                
+            
+            
+                
+                
+                <script type="text/javascript"><!--  
+/* ----- analytics.js ----- */
+// http://efod.se/portal_javascripts/analytics.js?original=1
+if(location.protocol=='https:'){document.write('<script src="https://ssl.google-analytics.com/urchin.js" type="text/JavaScript"><\/script>')} else{document.write('<script src="http://www.google-analytics.com/urchin.js" type="text/JavaScript"><\/script>')}
+function callGoogleAnalytics(){_uacct="UA-4306788-1";urchinTracker()}
+registerPloneFunction(callGoogleAnalytics);
+
+                     // --></script>
+                
+            
+        
+    
+
+    
+        
+            
+                
+                    
+                    
+                        <style type="text/css"><!-- @import url(http://efod.se/portal_css/EFODSkin/ploneStyles1067.css); --></style>
+                    
+                    
+                
+            
+            
+                
+                    <link rel="alternate stylesheet"
+                          type="text/css" media="screen"
+                          href="http://efod.se/portal_css/EFODSkin/ploneStyles2412.css"
+                          title="Small Text" />
+                    
+                    
+                
+            
+            
+                
+                    <link rel="alternate stylesheet"
+                          type="text/css" media="screen"
+                          href="http://efod.se/portal_css/EFODSkin/ploneStyles4754.css"
+                          title="Large Text" />
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <style type="text/css"><!-- @import url(http://efod.se/portal_css/EFODSkin/ploneStyles9926.css); --></style>
+                    
+                    
+                
+            
+            
+                
+                    <link rel="alternate stylesheet"
+                          type="text/css" media="screen"
+                          href="http://efod.se/portal_css/EFODSkin/ploneStyles5957.css"
+                          title="Small Text" />
+                    
+                    
+                
+            
+            
+                
+                    <link rel="alternate stylesheet"
+                          type="text/css" media="screen"
+                          href="http://efod.se/portal_css/EFODSkin/ploneStyles5161.css"
+                          title="Large Text" />
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <style type="text/css" media="all"><!-- @import url(http://efod.se/portal_css/EFODSkin/ploneStyles9560.css); --></style>
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <style type="text/css" media="all"><!-- @import url(http://efod.se/portal_css/EFODSkin/EFOD.css); --></style>
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <style type="text/css" media="all"><!-- @import url(http://efod.se/portal_css/EFODSkin/ploneStyles0953.css); --></style>
+                    
+                    
+                
+            
+        
+    
+    
+    <!-- Internet Explorer CSS Fixes + IE7 for compliance fixes (limited set) -->
+    <!--[if lt IE 7]>
+        <style type="text/css" media="all">@import url(http://efod.se/IEFixes.css);</style>
+    <![endif]-->
+
+    <!--[if gte IE 5.5000]>
+        <style type="text/css" media="all">@import url(http://efod.se/iepngfix.js);</style>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://efod.se/favicon.ico" />
+
+    <!-- Put this inside iefixstart to apply the IE7 script. It will be very slow, and currently
+         breaks with plonePrint.css and plonePresentation.css for unknown reasons.
+        <script src="ie7-standard.js" type="text/javascript" tal:attributes="src string:$portal_url/ie7/ie7-standard.js"></script>
+    -->
+
+
+    <link rel="home" href="http://efod.se"
+          title="Front page" />
+    <link rel="search" title="Search this site"
+          href="http://efod.se/search_form" />
+    <link rel="author" title="Author information"
+          href="http://efod.se/author/forsberg" />
+    <link rel="contents" href="http://efod.se/sitemap"
+          title="Site Map" />
+    
+    
+
+    
+
+    <link rel="up" href="http://efod.se/software/lyscvs"
+          title="Up one level" />
+
+    
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+
+    
+      
+      
+    
+
+    
+
+      
+      <!--[if IE]>
+      <script type="text/javascript"
+              src="http://efod.se/plone_minwidth.js"></script>
+      <![endif]-->
+
+      
+    
+    
+    
+    
+
+
+      
+      
+    
+
+    
+      
+      
+    
+
+  </head>
+
+  <body class="section-software" dir="ltr">
+
+    <div id="visual-portal-wrapper">
+
+      <div id="portal-top">
+
+        <div id="portal-header">
+          <p class="hiddenStructure">
+            <a accesskey="2"
+               href="http://efod.se/software/lyscvs/INSTALL.txt#documentContent">Skip to content.</a> |
+
+            <a accesskey="6"
+               href="http://efod.se/software/lyscvs/INSTALL.txt#portlet-navigation-tree">Skip to navigation</a>
+          </p>
+
+             <ul id="portal-siteactions">
+
+    <li id="siteaction-sitemap"><a
+    href="http://efod.se/sitemap" accesskey="3"
+    title="Site Map">Site Map</a></li>
+    <li id="siteaction-accessibility"><a
+    href="http://efod.se/accessibility-info" accesskey="0"
+    title="Accessibility">Accessibility</a></li>
+    <li id="siteaction-contact"><a
+    href="http://efod.se/contact-info" accesskey="9"
+    title="Contact">Contact</a></li>
+
+</ul>
+
+             <div id="portal-searchbox">
+    <form name="searchform" action="http://efod.se/search"
+          style="white-space:nowrap"
+          onsubmit="return liveSearchSubmit()">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+
+        <div class="LSBox">
+        <input id="searchGadget" name="SearchableText"
+               type="text" size="15" title="Search Site"
+               accesskey="4" class="visibility:visible" />
+
+        <input class="searchButton" type="submit"
+               value="Search" />
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://efod.se/search_form" accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+
+</div>
+
+             <h1 id="portal-logo">
+    <a href="http://efod.se" accesskey="1">efod.se</a>
+</h1>
+
+             <div id="portal-skinswitcher">
+  
+</div>
+
+             
+    <h5 class="hiddenStructure">Sections</h5>
+
+    <ul id="portal-globalnav">
+        <li id="portaltab-index_html" class="plain">
+            <a href="http://efod.se">Home</a></li>
+        <li id="portaltab-photos" class="plain">
+            <a href="http://efod.se/photos">Photos</a></li>
+        <li id="portaltab-wallpapers" class="plain">
+            <a href="http://efod.se/wallpapers" title="">Wallpapers</a></li>
+        <li id="portaltab-blog" class="plain">
+            <a href="http://efod.se/blog"
+               title="Various observations by Erik Forsberg">Blog</a></li>
+        <li id="portaltab-writings" class="plain">
+            <a href="http://efod.se/writings"
+               title="Sometimes I write documentation of various kinds. I've collected it here.">Writings</a></li>
+        <li id="portaltab-software" class="selected">
+            <a href="http://efod.se/software" title="">Software</a></li>
+        <li id="portaltab-about" class="plain">
+            <a href="http://efod.se/about"
+               title="Information about the site and its owner.">About</a></li>
+    </ul>
+
+          </div>
+
+          <div id="portal-personaltools-wrapper">
+
+<h5 class="hiddenStructure">Personal tools</h5>
+
+<ul id="portal-personaltools">
+   
+
+    
+        <li>
+            <a href="http://efod.se/login_form">
+               Log in
+            </a>
+        </li>
+    
+
+</ul>
+</div>
+
+           <div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <a href="http://efod.se">Home</a>
+    <span class="breadcrumbSeparator">
+        &rarr;
+        
+    </span>
+    <span dir="ltr">
+        
+            <a href="http://efod.se/software">Software</a>
+            <span class="breadcrumbSeparator">
+                &rarr;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            <a href="http://efod.se/software/lyscvs">lyscvs</a>
+            <span class="breadcrumbSeparator">
+                &rarr;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>INSTALL.txt</span>
+         
+    </span>
+
+</div>
+      </div>
+
+      <div class="visualClear" id="clear-space-before-portal-columns"><!-- --></div>
+
+      
+
+      <div id="portal-columns" class="visualColumnHideNone">
+          <div id="visual-column-wrapper">
+
+            
+            <div id="portal-column-content">
+
+              
+                <div id="content" class="">
+
+                  
+
+                  <div class="documentContent" id="region-content">
+
+                    <a name="documentContent"></a>
+
+                    
+
+    
+
+
+
+                    
+
+                    
+    
+
+        <div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+    
+        <li>
+            <a href="javascript:this.print();">
+
+                <img src="http://efod.se/print_icon.gif"
+                     alt="Print this page"
+                     title="Print this page" id="icon-print" />
+            </a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+        <h1 class="documentFirstHeading">INSTALL.txt</h1>
+    
+        <div>
+
+    <div class="documentByLine">
+        
+
+        
+          <span>
+            by
+          <a href="http://efod.se/author/forsberg">Erik Forsberg</a>
+          </span>
+
+          &mdash;
+
+        
+
+        <span>
+        last modified
+        </span>
+        2006-04-19 22:18
+
+        
+
+        
+
+        
+
+        
+
+        <div class="reviewHistory">
+    
+</div>
+
+    </div>
+
+</div>
+
+        
+    
+        
+    
+        <div class="plain">
+            <p>Installation instructions for the LysCVS system.<br /><br />by Erik Forsberg &lt;forsberg@lysator.liu.se&gt;<br />http://www.lysator.liu.se/~forsberg/hacks/lyscvs<br /><br />1. Introduction<br />===============<br /><br />LysCVS is a system that provides access to CVS in a easily<br />administered way for both local and external users.<br /><br />In this release, a local user is a user that's present in NIS. An<br />external user is all other users, they are present in a MySQL<br />database.<br /><br />The functionality is similar to the functionality of sourceforge's CVS<br />server, with some exceptions:<br /><br />* Local users still use their passwords to access the system.<br />* Only local users can create projects.<br /><br />Aside from that, LysCVS is hopefully a bit less complex to setup, for<br />a small environment.<br /><br />2. Theory of operation<br />======================<br /><br />Users<br />-----<br /><br />There are local users, present in the NIS database, and external<br />users, not present in the NIS database but kept in a MySQL database.<br /><br />Local users can create external users and add them to their<br />projects. External users can administrate projects (add/remove users<br />of it), but not create them. This way, limits of what projects may be<br />created are imposed by local rules, that local users hopefully obey<br />:).<br /><br />External users account data is accessed through libpam-mysql (for<br />password information) and nss_mysql (for other user information).<br /><br />Local users also have a dummy entry in the MySQL database because of<br />the way nss works.<br /><br />Projects<br />--------<br /><br />Projects created by local users get their own cvsroot and can have as<br />many modules as the users with write access to the repository wants.<br /><br />Anonymous read-only access is also possible, using pserver. The<br />pserver is a special patched version. See the part about cvs for<br />details.<br /><br />When anonymous read-only access is enabled, a special user called<br />anoncvs_&lt;projectname&gt; is created and used in the CVSROOT/passwd file.<br /><br />Web-based administration<br />------------------------<br /><br />A mod_python program makes administration of projects easy. It also<br />frees the system administrator from boring tasks such as<br />adding/deleting users/projects. The administration webpages are using<br />a template system (HTMLgen) which means altering the look and feel of<br />the system is easy (very little hardcoded HTML).<br /><br />Mail<br />----<br /><br />Optionally, using Postfix as Mail Transfer Agent, LysCVS gives each<br />user (local or external) an email address on the form<br />&lt;username&gt;@&lt;cvs-server.example.com&gt;.<br /><br />Also, LysCVS can create a mailing list for each project that each<br />project member can decide if he/she want to be a member of. Commit<br />logs are automatically sent to that mailing list.<br /><br />The reason you have to use Postfix is that both the mail addresses of<br />users, and the lists, are created using MySQL alias/virtual tables. I<br />do not know about any other MTA that can use MySQL, but if there are<br />such MTAs, you can probably use them after some hacking. Please report<br />any success doing that.<br /><br />Note: If you don't want commit logs to be sent to a mailinglist,<br />you'll have to comment out two lines in scripts/editloginfo.sh and<br />scripts/create_repository.sh <br /><br />3. Installation<br />===============<br /><br />First, find LysCVS. You've probably succeeded doing that :-).<br /><br />Unpack the sources. In my examples, they are unpacked to /opt/lyscvs<br /><br />Create your MySQL database using the file<br />&lt;installroot&gt;/src/nss.sql. Setup access rights correctly for MySQL.<br /><br />Install nss_mysql, it's available from <br />http://savannah.gnu.org/projects/nss-mysql if your<br />distributions doesn't support it.<br /><br />Configure nss_mysql. I use the following configuration files:<br /><br />--start /etc/nss-mysql.conf--<br /># This is the user configuration part<br />users.host = localhost;<br />users.where_clause = user.status = 'A'; # fully qualifed where clause<br />users.database = nss;<br />users.db_user = nss; <br />users.db_password = &lt;password&gt;;<br />users.table = user;<br />users.user_column = user_name;<br />users.password_column = password; # not used if you have enabled the shadow support<br />users.userid_column = uid;<br />users.uid_column = uid;<br />users.gid_column = gid; # not used if you have run configure --with-default_gid=GID<br />users.realname_column = realname;<br />users.homedir_column = homedir; # not used if you have run configure --with-default_home=DIR<br />users.shell_column = shell;<br />users.default_gid = 30; # GID of users default group<br />users.default_home = /home; # used only if you have run configure --with-default_home=DIR<br /><br /># This is the groups configuration part<br /># This is only used if you have enabled the group support<br /><br />groups.host = localhost;<br />groups.where_clause = groups.status = 'A'; #fully qualified where clause<br />groups.database = nss;<br />groups.db_user = nss;<br />groups.db_password = &lt;password&gt;;<br />groups.group_info_table = groups;<br />groups.group_name_column = group_name;<br />groups.groupid_column = group_id;<br />groups.members_table = user_group;<br />groups.member_userid_column = user_id;<br />groups.member_groupid_column = group_id;<br /># At this time, we do not support a GID column. We use<br /># the following trick to choose a GID : gid = group_id + first_gid.<br /># You should not set first_gid to less than 1000<br />groups.first_gid = 1000;<br />--end /etc/nss-mysql.conf--<br /><br />--start /etc/resolv.conf--<br /># /etc/nsswitch.conf<br />#<br /># Example configuration of GNU Name Service Switch functionality.<br /># If you have the `glibc-doc' and `info' packages installed, try:<br /># `info libc &quot;Name Service Switch&quot;' for information about this file.<br /><br />passwd:         compat mysql<br />group:          compat mysql<br />shadow:         compat<br /><br />hosts:          files dns<br />networks:       files<br /><br />protocols:      db files<br />services:       db files<br />ethers:         db files<br />rpc:            db files<br /><br />netgroup:       nis<br />--end /etc/resolv.conf--<br /><br />You also need libpam-mysql. I have a /etc/pam.d/sshd that looks like<br />this:<br /><br />--snip--<br />auth       required     pam_nologin.so<br />auth       required     pam_env.so # [1]<br />auth       sufficient   pam_unix.so<br />auth       required     pam_mysql.so user=pam_auth passwd=&lt;password&gt; db=nss passwdcolumn=password usercolumn=user_name crypt=1 <br /><br /><br />account    sufficient   pam_unix.so<br />account    required     pam_mysql.so user=pam_account passwd=&lt;password&gt; db=nss passwdcolumn=password usercolumn=user<br /><br />session    required     pam_unix.so<br />session    optional     pam_lastlog.so # [1]<br />session    optional     pam_motd.so # [1]<br />session    optional     pam_mail.so standard # [1]<br /><br />password   required     pam_unix.so<br />--snap--<br /><br />Compile cvs. Grab a recent stable version from http://www.cvshome.org<br />and apply the patch  &lt;installroot&gt;/src/cvs-sf-patch. Compile it and<br />place the cvs binary where your ssh logins can find it.<br /><br />(In my setup, LysCVS has it's own openSSHD daemon with a restrictive<br />configuration (no port forwards, no X11 etc..) - but you don't have to<br />do this.)<br /><br />Configure pserver, I use xinetd with the following configuration:<br /><br />--snip--<br />service cvspserver<br />{<br />        socket_type     = stream<br />        protocol        = tcp<br />        wait            = no<br />        user            = root<br />        server          = /opt/lyscvs/bin/cvs<br />        server_args     = --allow-root=/cvsroot pserver<br />        bind            = 10.100.1.1<br />}<br /><br />--snap--<br /><br />Make sure you fix that ip in the bind statement. It's not mandatory,<br />but it helps, since people won't access the wrong IP by mistake.<br /><br />Install apache, with mod_python. The latter is available from<br />http://www.modpython.org <br /><br />Modify the lib/constants.py file. Most things should be pretty<br />straightforward to understand. Make sure all directories exists.<br /><br />Modify your apache configuration. Something like this must be added:<br /><br />--snip--<br />Listen cvs.example.com:443<br />Listen cvs.example.com:80<br /><br />&lt;VirtualHost cvs.example.com:80&gt;<br />DocumentRoot /opt/lyscvs/web/root<br />RedirectMatch 301 /cvsadm.*$ https://cvs.example.com/cvsadm/login<br />&lt;/VirtualHost&gt;<br /><br />&lt;VirtualHost cvs.example.com:443&gt;<br />DocumentRoot /opt/lyscvs/web/root<br /><br />Alias /cvsadm/ /opt/lyscvs/web/pybin/<br /><br />&lt;Directory &quot;/opt/lyscvs/web/pybin&quot;&gt;<br />	Options -Indexes<br />	SetHandler python-program<br />        PythonHandler cvsadm<br />	PythonDebug on<br />&lt;/Directory&gt;<br /><br />RedirectMatch 301 /cvsadm/$ https://cvs.example.com/cvsadm/login<br />RedirectMatch 301 /cvsadm$ https://cvs.example.com/cvsadm/login<br /><br />&lt;/VirtualHost&gt;<br />--snap--<br /><br />(You probably want to enable SSL too..)<br /><br />Now, start blaming me because the installation instructions are too<br />short, and try to (re)start apache, and access your newly created cvs server.<br /><br />4. Mail<br />=======<br /><br />As noted earlier, LysCVS can optionally cooperate with the Postfix MTA<br />to create mail addresses and mailing lists. This section describes how<br />to do this.<br /><br />First, get and install Postfix, available from<br />http://www.postfix.org. Make sure you compile it with MySQL support<br />(read the file MYSQL_README included in the source distribution).<br /><br />Next, configure Postfix. One of the nice features of Postfix is that<br />for most installations, the default values of the configuration<br />parameters are correct. There are only a few values you need to<br />change. See src/postfix-example.com for an example of what you<br />probably need to add to your /etc/postfix/main.cf (or wherever you<br />chose to place your postfix configuration).<br /><br />Use the *.mysql files that also resides in the src/ directory. Each of<br />them defines an alias table that's used to create different parts of<br />the mail system. Check out the files in question, they have some<br />comments that describe their function.<br /><br />Also note that create_repository.sh inserts a line in each new<br />projects CVSROOT/loginfo that mails the project-specific list with<br />info about each commit.<br /><br />Some people probably don't want commit messages when they do commit's<br />themselves. Unfortunately, they won't be satisifed by this system. On<br />the other hand, they can construct their own line in loginfo to send<br />mail only when they're not the person doing the commit. Such a line<br />could look like this:<br /><br />ALL (if [ `/usr/bin/id -un` != &quot;username&quot; ]; then (/bin/cat | /usr/bin/mail -s %s username@example.com); fi)<br /><br />(Thanks goes to Peter Åstrand &lt;astrand@lysator.liu.se&gt; for the above<br />line)<br /><br />This section probably needs more work, but since I'm so familiar with<br />mail systems and Postfix, I probably can't see what's unclear. Please<br />give me feedback on this!</p>
+        </div>
+
+        <div id="relatedItems">
+    
+        
+            
+        
+    
+</div>
+    
+    
+
+
+                    
+                      
+                 
+    
+        
+    
+
+                    
+
+                  </div>
+
+                </div>
+
+              
+            </div>
+            
+
+            
+            <div id="portal-column-one">
+              <div class="visualPadding">
+                
+                  
+
+    
+        
+
+        
+            
+
+<dl class="portlet" id="portlet-navigation-tree">
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="http://efod.se/sitemap" class="tile">Navigation</a>
+       
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem lastItem">
+        <ul class="portletNavigationTree navTreeLevel0">
+
+            <li class="navTreeItem">
+                
+                   <div class="visualIcon contenttype-plone-site">
+                       <a class=" visualIconPadding"
+                          href="http://efod.se" title="">
+                       Home
+                       
+                       </a>
+                   </div>
+                
+            </li>
+            
+
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/wallpapers"
+           class="state-published visualIconPadding"
+           title="">Wallpapers</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-weblog">
+        
+        <a href="http://efod.se/blog"
+           class="state-published visualIconPadding"
+           title="Various observations by Erik Forsberg">Blog</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/writings"
+           class="state-published visualIconPadding"
+           title="Sometimes I write documentation of various kinds. I've collected it here.">Writings</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/software"
+           class="state-published visualIconPadding"
+           title="">Software</a>
+        
+    </div>
+
+    <ul class="navTree navTreeLevel2">
+        
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/software/lyscvs"
+           class="state-published visualIconPadding"
+           title="">lyscvs</a>
+        
+    </div>
+
+    <ul class="navTree navTreeLevel3">
+        
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/software/lyscvs/demo"
+           class="state-published visualIconPadding"
+           title="">demo</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/software/lyscvs/download"
+           class="state-published visualIconPadding"
+           title="">download</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-document">
+        
+        <a href="http://efod.se/software/lyscvs/INSTALL.txt"
+           class="state-published visualIconPadding navTreeCurrentItem"
+           title="">INSTALL.txt</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+    </ul>
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/software/YASC"
+           class="state-published visualIconPadding"
+           title="">YASC</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/software/configuration"
+           class="state-published visualIconPadding"
+           title="Various configuration files that might be of use for other people.">Configuration Files</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/software/patches"
+           class="state-published visualIconPadding"
+           title="">Patches</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+    </ul>
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+
+    <div class="visualIcon contenttype-folder">
+        
+        <a href="http://efod.se/about"
+           class="state-published visualIconPadding"
+           title="Information about the site and its owner.">About</a>
+        
+    </div>
+
+    
+    
+</li>
+
+
+
+
+        </ul>
+        <span class="portletBottomLeft"></span>
+        <span class="portletBottomRight"></span>
+    </dd>
+</dl>
+
+
+        
+
+        
+
+        
+    
+
+                
+                &nbsp;
+              </div>
+            </div>
+            
+
+          </div>
+          
+          <div id="portal-column-two">
+            <div class="visualPadding">
+              
+                
+
+    
+        
+
+        
+            <div>
+      
+      
+
+        <dl class="portlet" id="portlet-recent">
+          
+          <!-- span class="portletTopLeft" /-->
+          <dt class="portletHeader">
+            Recent Blog Posts
+          </dt>
+          <!-- span class="portletTopRight" /-->
+          
+            <dd class="portletItem odd">
+              <div class="contenttype-weblogentry">                
+                <a href="http://efod.se/blog/archive/2008/08/12/post-vacation-coding"
+                   class="state-published visualIconPadding"
+                   title="">
+                  Post-Vacation Coding
+                  <span class="portletItemDetails">2008-08-12</span>
+                </a>
+              </div>
+            </dd>
+          
+          
+            <dd class="portletItem even">
+              <div class="contenttype-weblogentry">                
+                <a href="http://efod.se/blog/archive/2008/08/05/galenskap"
+                   class="state-published visualIconPadding"
+                   title="">
+                  Galenskap
+                  <span class="portletItemDetails">2008-08-05</span>
+                </a>
+              </div>
+            </dd>
+          
+          
+            <dd class="portletItem odd">
+              <div class="contenttype-weblogentry">                
+                <a href="http://efod.se/blog/archive/2008/07/23/parkettspik"
+                   class="state-published visualIconPadding"
+                   title="">
+                  Plötsliga parkettgolv
+                  <span class="portletItemDetails">2008-07-23</span>
+                </a>
+              </div>
+            </dd>
+          
+          
+            <dd class="portletItem even">
+              <div class="contenttype-weblogentry">                
+                <a href="http://efod.se/blog/archive/2008/05/13/wordpress_206_25"
+                   class="state-published visualIconPadding"
+                   title="">
+                  Upgrading Wordpress from 2.0.6 -&gt; 2.5 - not a smooth experience
+                  <span class="portletItemDetails">2008-05-13</span>
+                </a>
+              </div>
+            </dd>
+          
+          
+            <dd class="portletItem odd lastItem">
+              <div class="contenttype-weblogentry">                
+                <a href="http://efod.se/blog/archive/2008/05/12/between-jobs"
+                   class="state-published visualIconPadding"
+                   title="">
+                  Between Jobs
+                  <span class="portletItemDetails">2008-05-12</span>
+                </a>
+              </div>
+            </dd>
+          
+
+          
+          
+          <dd class="portletFooter even">
+          </dd>
+          
+          <!-- span class="portletBottomLeft" /-->
+          <!-- span class="portletBottomRight" /-->
+          
+        </dl>
+
+      
+      
+    </div>
+        
+
+        
+
+        
+    
+
+              
+              &nbsp;
+            </div>
+          </div>
+          
+
+      <div class="visualClear" id="clear-space-bottom-portal-columns"><!-- --></div>
+
+      </div>
+      
+
+      <hr class="netscape4" />
+
+      
+
+        <div id="portal-footer">
+</div>
+
+        <div id="portal-colophon">    </div>
+      
+
+    </div>
+
+</body>
+</html>
+
+
