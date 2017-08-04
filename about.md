@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I'm Erik. I have a daughter, a wife, a house. I do programming for a living, and sometimes as a hobby. I should probably add more stuff here sometime. 
+I'm Erik. I have a daughter, a wife, a house. I do programming for a living, and sometimes as a hobby. I should probably add more stuff here sometime.
+
+[Curriculum Vitae](CV)
 
 ### Contact me
 
