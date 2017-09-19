@@ -7,7 +7,7 @@ There are many ways of setting the fully qualified domain name on a Linux machin
     # hostname
     host.example.com
 
-This is a bit of the easy and quick fix, and will not necessarily work with all systems. Also, it doesn't work to weel on multi-domain systems.
+This is a bit of the easy and quick fix, and will not necessarily work with all systems. Also, it doesn't work to well on multi-domain systems.
 
 A better trick that I found while dealing with Openstack hosts that are managed via [cloud-init](https://cloudinit.readthedocs.io) is to set just the hostname in `/etc/hostname`, then add an entry to `/etc/hosts`. It doesn't have to be an entry that points at any real IP address, just as it contains both the FQDN and the hostname. So:
 
