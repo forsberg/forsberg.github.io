@@ -16,4 +16,7 @@ I suspect that the fact that we run this LVS in *Direct Route (DR)* mode doesn't
 
 If you have full control over your machine (i.e run on bare metal) and still want a stateful firewall there are ways to instruct iptables to not use connection tracking for some packets, with the NOTRACK mark on packets in iptables. [Here's some info on that](http://security.maruhn.com/iptables-tutorial/x4772.html) But our hosting department didn't want to do this, as the firewall is handled by openstack. Also, they did not want to raise the limit on the number of connections that the conntrack tables can hold too high, since it's a system shared by multiple tenants.
 
+If your requirements for load balancing with LVS is mostly about keeping the service highly available, and not so much about load, then running LVS on openstack can work. I.e, if you have a low-traffic/low-connection service which just needs to be highly available, and therefore needs a pair of machines that keep the virtual IP up between them, then it may be OK. 
+
 We're getting a pair of physical machines instead. You live and learn.
+
