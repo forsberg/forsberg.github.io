@@ -33,7 +33,14 @@ Education
 Work Experience
 ===============
 
-2009-date
+2015-10 - date
+
+:   Systems Engineer at [NIRA Dynamics](http://www.niradynamics.se)
+
+> - Working with the backend behind NIRAs new slip hazard warning feature
+>   building infrastructure for handling data from large number of cars. 
+
+2009 - 2015-09
 
 :   Full time job as Lead Developer/Architect for the Opera Statistics
     Platform at [Opera Software](http://www.opera.com).
@@ -41,12 +48,12 @@ Work Experience
 > -   Designed and implemented large parts of the two first generations
 >     of the Statistics Platform, using Hadoop, Cassandra, Zookeeper
 >     and Flask.
-> -   Currently implementing a third generation using streaming
+> -   Implemented a third generation using streaming
 >     technologies such as Google Cloud PubSub, Google Dataflow, Google
 >     BigQuery and Apache Avro.
-> -   Serving as Lead Developer/Architect in a team of 6.
+> -   Served as Lead Developer/Architect in a team of 6.
 
-2008-2009
+2008 - 2009
 
 :   Full time job as Server-side Developer, [Opera
     Mini](http://www.opera.com/mini/), at [Opera
@@ -55,7 +62,7 @@ Work Experience
 > -   Lead developer for OTA installation server for Opera Mini.
 > -   Some development on Opera Mini and Opera Turbo services.
 
-2003-2008
+2003 - 2008
 
 :   Full time job as Systems Analyst/Developer at [Cendio
     AB](http://www.cendio.com).
@@ -67,7 +74,7 @@ Work Experience
 > > -   One of the main developers of Cendio's main product, ThinLinc, a
 > >     thin client solution.
 
-2001-2003
+2001 - 2003
 
 :   Part time job at [Cendio AB](http://www.cendio.com).
 
@@ -88,7 +95,7 @@ Work Experience
 > to system administrators from several departments at Linköping
 > University.
 
-2001-2001
+2001
 
 :   Summer and part time job at [CSC Sweden](http://se.country.csc.com)
     in Linköping.
@@ -105,7 +112,7 @@ Work Experience
     applications using [Macromedia
     Authorware](http://www.macromedia.com/software/authorware).
 
-1999-2000
+1999 - 2000
 
 :   Part time job as a system administrator for [Foto Malmen
     AB](http://www.fotomalmen.se)
@@ -142,7 +149,7 @@ Other Experience
 > itself. The result of the project is successfully running at
 > [](http://bugs.python.org/)
 
-1999-2007
+1999 - 2007
 
 :   Volunteer System Administrator at [Lysator Academic Computer
     Society](http://www.lysator.liu.se), the larger of the two computer
