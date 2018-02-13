@@ -33,14 +33,14 @@ Education
 Work Experience
 ===============
 
-2015-10 - date
+2017-10 - date
 
 :   Systems Engineer at [NIRA Dynamics](http://www.niradynamics.se)
 
 > - Working with the backend behind NIRAs new slip hazard warning feature
 >   building infrastructure for handling data from large number of cars. 
 
-2009 - 2015-09
+2009 - 2017-09
 
 :   Full time job as Lead Developer/Architect for the Opera Statistics
     Platform at [Opera Software](http://www.opera.com).
