@@ -9,7 +9,7 @@ I did get a couple of warning e-mails, which I ignored, and then noticed I could
 
 Now, I tried rerunning the `certbot` command manually. It bailed out with an error message about letsencrypt servrs being unable to connect to my domain name via http to verify ownership. 
 
-So that's where I had my first [D'oh](https://www.youtube.com/watch?v=H22t-tiWiLw) moment: I had forwarded port 80 on my router (which I fiddled with a while back), only 443.
+So that's where I had my first [D'oh](https://www.youtube.com/watch?v=H22t-tiWiLw) moment: I had not forwarded port 80 on my router (which I fiddled with a while back), only 443.
 
 However, fixing that did not fix the problem, even though I confirmed I could now reach the domain name via http from the internet.
 
