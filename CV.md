@@ -117,7 +117,7 @@ Other Experience
 
 2018/2019
 
-: football coach for F12 (girls born 2012) at Linghems Sportklubb, coaching daughter and her teammates.
+: Football (Soccer) coach for F12 (girls born 2012) at Linghems Sportklubb, coaching daughter and her teammates.
 
 > - Included a 2-day course in leadership skills and techniques for being a coach to kids, arranged by the
     Swedish National Football association.
@@ -140,8 +140,7 @@ Other Experience
 > This involved writing a proof of concept in cooperation with a team of
 > volunteers, as well as the implementation of several scripts for
 > conversion of old data into the new tracker, and code for the tracker
-> itself. The result of the project is successfully running at
-> [](http://bugs.python.org/)
+> itself. 
 
 1999 - 2007
 
