@@ -186,7 +186,8 @@ Programming
 -----------
 
 Very good programming skills in Python and shell scripting. Good
-programming skills in Pike, Java and Scala. Some skills in C/C++, Go and Perl.
+programming skills in Pike, Java and Scala. Some skills in C/C++, Groovy, 
+Go and Perl.
 
 Good understanding of distributed applications and servers interacting
 heavily with the underlying operating system. Experience of HA
@@ -205,8 +206,11 @@ server at Opera Software.
 
 Very good understanding of event-driven network programming.
 
-Good experience of unit- and integration testing, mainly with PyUnit.
+Good understanting of unit- and integration testing, mainly with PyUnit.
 Some experience with load testing.
+
+Very good skills in Continuous Integration / Continuous Deploy systems, mostly
+with Jenkins, including scripted pipelines using Groovy.
 
 System/Network Administration - / DevOps Skills
 -----------------------------
@@ -221,7 +225,8 @@ Experience both with [KOPS](https://github.com/kubernetes/kops)-based
 and [EKS](https://aws.amazon.com/eks/)-based Kubernetes-klusters.
 
 Very good skills in configuring AWS services using Cloudformation.
-Experience with EC2, S3, RDS, IAM and others, as well as multi-account setups. 
+Experience with EC2, S3, RDS, IAM and others, including multi-account
+setups with centralized IAM and Roles.
 
 Experience in shell scripting for automating common tasks, as well as
 deep knowledge of configuration management tools, especially Puppet.
@@ -240,6 +245,8 @@ environment. Main developer of a desktop management feature in ThinLinc.
 
 Web Technology
 --------------
+
+Very good knowledge in configuring web servers such as Nginx and Apache.
 
 Good knowledge of HTML, basic knowledge of CSS.
 
@@ -269,7 +276,8 @@ In-depth knowledge of programming LDAP applications connecting to
 eDirectory](http://www.novell.com/products/edirectory/). Good
 understanding of schema design.
 
-In-depth knowledge in running Apache Kafka.
+In-depth knowledge in running Apache Kafka with Microservices
+forming a data processing chain.
 
 Security
 --------
