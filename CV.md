@@ -37,8 +37,14 @@ Work Experience
 
 :   Systems Engineer at [NIRA Dynamics](http://www.niradynamics.se)
 
-> - Working with the backend behind NIRAs new slip hazard warning feature
->   building infrastructure for handling data from large number of cars. 
+> - Infrastructure lead for the backend behind NIRAs new slip hazard warning feature.
+>   Building a highly available and scalable platform using Kubernetes on top of AWS
+>   for running various microservices and Flink Jobs.
+>
+>   The system uses Apache Kafka for message passing, and has extensive systems
+>   monitoring using Prometheus, Grafana and Graylog.
+> - Designed the data ingestion system using gRPC.
+> - Highly involved in preparations for ISO27000 certification.
 
 2009 - 2017-09
 
@@ -106,34 +112,22 @@ Work Experience
 > SecureID into AIX graphical login, created a system for monitoring the
 > backups and wrote several web applications for the company intranet.
 
-2000
-
-:   Part time job for Energy Interactive creating interactive e-learning
-    applications using [Macromedia
-    Authorware](http://www.macromedia.com/software/authorware).
-
-1999 - 2000
-
-:   Part time job as a system administrator for [Foto Malmen
-    AB](http://www.fotomalmen.se)
-
-1998
-
-:   Summer job as network administrator at [Jönköping High
-    School](http://www.hj.se)
-
-> At Jönköping High School, I was part of a project for upgrading all
-> workstations to Windows NT 4.0. I also modified the [Debian
-> GNU/Linux](http://www.debian.org) Linux distribution to integrate it
-> into the existing NIS+-based authorization system, and installed it on
-> about 80 workstations using a self-developed mass-installation system.
-
-1997
-
-:   Evening job teaching basic computer skills.
-
 Other Experience
 ================
+
+2018/2019
+
+: football coach for F12 (girls born 2012) at Linghems Sportklubb, coaching daughter and her teammates.
+
+> - Included a 2-day course in leadership skills and techniques for being a coach to kids, arranged by the
+    Swedish National Football association.
+> - Highly appreciated by the kids for being what is possibly the worst goalkeeper in the universe.
+
+2018-
+
+: Leader for a group of Scouts of age 7+ in Linghems Scoutkår.
+
+> - Attended the course "Leda Patrull"
 
 2007
 
@@ -177,14 +171,14 @@ Other Experience
 
 :   Military service as sergeant first class in an infantry brigade.
 
-    Served as a system administrator taking care of the staff computers
-    and a mobile local area network. The service period included 30
-    hours of leadership training, 400 hours of computer training, and
-    1000 hours of practical work with computers.
+>    Served as a system administrator taking care of the staff computers
+>    and a mobile local area network. The service period included 30
+>    hours of leadership training, 400 hours of computer training, and
+>    1000 hours of practical work with computers.
 
 Driver License
 
-:   Swedish 'B' drivers license authorizing me to drive normal cars.
+> Swedish 'B' drivers license authorizing me to drive cars with a weight up to 3500kg.
 
 Computer Skills
 ===============
@@ -193,7 +187,7 @@ Programming
 -----------
 
 Very good programming skills in Python and shell scripting. Good
-programming skills in C, Pike and Java. Some skills in C++ and Perl.
+programming skills in Pike, Java and Scala. Some skills in C/C++, Go and Perl.
 
 Good understanding of distributed applications and servers interacting
 heavily with the underlying operating system. Experience of HA
@@ -205,32 +199,35 @@ with [Hadoop](http://hadoop.apache.org) and
 [Dumbo](http://dumbotics.com).
 
 Experience with Google Cloud Platform, including AppEngine, PubSub,
-Streaming Dataflow, Datastore and BigQuery.
+Streaming Dataflow, Datastore and BigQuery. Some experience with Apache Flink.
 
 Experience with Apache Avro. Implemented in-house version of schema
-server.
+server at Opera Software.
 
 Very good understanding of event-driven network programming.
 
 Good experience of unit- and integration testing, mainly with PyUnit.
 Some experience with load testing.
 
-System/Network Administration
+System/Network Administration - / DevOps Skills
 -----------------------------
 
 15+ years of experience in administrating networks with UNIX-like
 platforms and Microsoft Windows. In-depth knowledge of Linux, good
 knowledge of Solaris. Some experience in Microsoft Windows.
 
+Very good skills in configuring and running Kubernetes clusters, including
+integration with monitoring tools such as Prometheus, Grafana and Graylog.
+Experience both with [KOPS](https://github.com/kubernetes/kops)-based
+and [EKS](https://aws.amazon.com/eks/)-based Kubernetes-klusters.
+
+Very good skills in configuring AWS services using Cloudformation.
+Experience with EC2, S3, RDS, IAM and others, as well as multi-account setups. 
+
 Experience in shell scripting for automating common tasks, as well as
 deep knowledge of configuration management tools, especially Puppet.
-Good knowledge of network statistic/graphing tools such as
-[RRDTool](http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/), InfluxDB
-and Grafana, as well as network monitoring tools, especially
-[Nagios](http://www.nagios.org).
-
-Planned and implemented current logical and physical network structure
-at Cendio AB, including routing and firewall configuragion.
+Good knowledge of network statistic/graphing tools such as Prometheus,
+InfluxDB, Grafana and Graylog.
 
 Planned and implemented logical network structure for Opera Statistics
 Platform, handling Terabytes on a daily basis.
@@ -252,10 +249,9 @@ frameworks, including standard Python and Perl CGI,
 [Webmin](http://www.webmin.org) modules,
 [mod\_python](http://www.modpython.org), [Plone](http://www.plone.org)
 and [Zope](http://www.zope.org), [Django](http://www.djangoproject.com),
-Java servlets with [Tomcat](http://tomcat.apache.org), and
-[Webware](http://www.webwareforpython.org) with [Cheetah
-Templates](http://www.cheetahtemplate.org), as well as Flask, and
-Bootstrap.
+Java servlets with [Tomcat](http://tomcat.apache.org), as well as Flask, and
+Bootstrap. Some experience in creating web backends using
+[Scala Play](https://www.playframework.com).
 
 Databases
 ---------
@@ -266,13 +262,15 @@ In-depth knowledge of configuration and use of
 
 In-depth knowledge about distributed Key/Column databases (mainly
 [Cassandra](http://cassandra.apache.org), but also some experience from
-Google Datastore).
+Google Datastore). In-depth knowledge with [Scylla](https://www.scylladb.com)
 
 Good knowledge of configuring [OpenLDAP](http://www.openldap.org).
 In-depth knowledge of programming LDAP applications connecting to
 [OpenLDAP](http://www.openldap.org) and [Novell
 eDirectory](http://www.novell.com/products/edirectory/). Good
 understanding of schema design.
+
+In-depth knowledge in running Apache Kafka.
 
 Security
 --------
@@ -283,7 +281,10 @@ use.
 
 Experience from several security-related products, such as [Nordic Edge
 One Time Password Server](http://www.nordicedge.se/produkt_otp.shtml)
-and RSA SecurID.
+and RSA SecurID. Some experience in configuring and using Microsoft ADFS
+as well as [Duo](https://duo.com).
+
+Some experience in configuring web-based authentication using OIDC and SAML.
 
 Good understanding of TLS and GPG.
 
@@ -302,12 +303,14 @@ Contributor to several open source projects, including
 [Mailman](http://www.list.org). Author of several small projects under
 Open Source license.
 
+Lead in the process of creating an open source policy for NIRA Dynamics.
+
 Documentation/Lectures
 ----------------------
 
 Good documentation writing skills. Experience from writing technical
-documentation in Docbook, SGML, HTML, LaTeX, FrameMaker and reStructured
-Text.
+documentation in Docbook, SGML, HTML, LaTeX, FrameMaker, reStructured
+Text and Markdown, using various tools, most recently [Hugo](https://gohugo.io). 
 
 Author of a large set of webpages about Linux.
 
