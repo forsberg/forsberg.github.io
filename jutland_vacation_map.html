@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12d0bcdbbf6304aa59eed02d610f550e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_12d0bcdbbf6304aa59eed02d610f550e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_12d0bcdbbf6304aa59eed02d610f550e = L.map(
+                "map_12d0bcdbbf6304aa59eed02d610f550e",
+                {
+                    center: [56.3, 9.7],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2e85894a880f719b6a6bc5abd3d1e851 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2e85894a880f719b6a6bc5abd3d1e851.addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var marker_a1aa7651b26132a316a9d3a5d43dd97c = L.marker(
+                [57.434, 10.533],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_b781f8396edaa02c90704da7b490496d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1aa7651b26132a316a9d3a5d43dd97c.setIcon(icon_b781f8396edaa02c90704da7b490496d);
+        
+    
+        var popup_afc8f634b51582ffffa08f87e51ad8d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79dac45cc67174e1d8a906812b714379 = $(`<div id="html_79dac45cc67174e1d8a906812b714379" style="width: 100.0%; height: 100.0%;"><b>Palm Beach (Palmestranden), Frederikshavn</b><br>A unique beach with real palm trees and various activities.<br><a href='https://www.enjoynordjylland.com/north-jutland/plan-your-trip/palmestranden-palmbeach-gdk599558' target='_blank'>More info</a></div>`)[0];
+                popup_afc8f634b51582ffffa08f87e51ad8d5.setContent(html_79dac45cc67174e1d8a906812b714379);
+            
+        
+
+        marker_a1aa7651b26132a316a9d3a5d43dd97c.bindPopup(popup_afc8f634b51582ffffa08f87e51ad8d5)
+        ;
+
+        
+    
+    
+            marker_a1aa7651b26132a316a9d3a5d43dd97c.bindTooltip(
+                `<div>
+                     Palm Beach (Palmestranden), Frederikshavn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b365fddfd5ff2858fbc3d96a6f69e485 = L.marker(
+                [57.257, 9.624],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_6582dde8c0f06128f9d2a6048d9a4561 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b365fddfd5ff2858fbc3d96a6f69e485.setIcon(icon_6582dde8c0f06128f9d2a6048d9a4561);
+        
+    
+        var popup_83e6ed065099bd10594a0c645392bfdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20cda38e86a1fdbd156660f35e803f62 = $(`<div id="html_20cda38e86a1fdbd156660f35e803f62" style="width: 100.0%; height: 100.0%;"><b>Fårup Sommerland</b><br>A popular amusement park with rides and water activities.<br><a href='https://www.faarupsommerland.dk/en/' target='_blank'>More info</a></div>`)[0];
+                popup_83e6ed065099bd10594a0c645392bfdf.setContent(html_20cda38e86a1fdbd156660f35e803f62);
+            
+        
+
+        marker_b365fddfd5ff2858fbc3d96a6f69e485.bindPopup(popup_83e6ed065099bd10594a0c645392bfdf)
+        ;
+
+        
+    
+    
+            marker_b365fddfd5ff2858fbc3d96a6f69e485.bindTooltip(
+                `<div>
+                     Fårup Sommerland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b39c040c9d1478b00fbf6ba17f7f0fc = L.marker(
+                [56.425, 10.614],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_d9a3a5b971ced6842030e2dca79b7ef0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b39c040c9d1478b00fbf6ba17f7f0fc.setIcon(icon_d9a3a5b971ced6842030e2dca79b7ef0);
+        
+    
+        var popup_4ac5750ed17756e44c38d24792f937e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26602ded29aa39341381d294ef9edf88 = $(`<div id="html_26602ded29aa39341381d294ef9edf88" style="width: 100.0%; height: 100.0%;"><b>Djurs Sommerland</b><br>An amusement park with a variety of attractions including roller coasters and water slides.<br><a href='https://djurssommerland.dk/en/' target='_blank'>More info</a></div>`)[0];
+                popup_4ac5750ed17756e44c38d24792f937e1.setContent(html_26602ded29aa39341381d294ef9edf88);
+            
+        
+
+        marker_0b39c040c9d1478b00fbf6ba17f7f0fc.bindPopup(popup_4ac5750ed17756e44c38d24792f937e1)
+        ;
+
+        
+    
+    
+            marker_0b39c040c9d1478b00fbf6ba17f7f0fc.bindTooltip(
+                `<div>
+                     Djurs Sommerland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d27535271eb32d9c7270d16c7841698f = L.marker(
+                [57.119, 8.618],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_8c8346ae31ffc7adf61eaff18f496d52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d27535271eb32d9c7270d16c7841698f.setIcon(icon_8c8346ae31ffc7adf61eaff18f496d52);
+        
+    
+        var popup_1292625334d15b075b3c7fbdbf912b92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_030e18aa8df2f2dc3e4f9d6e6f9bea00 = $(`<div id="html_030e18aa8df2f2dc3e4f9d6e6f9bea00" style="width: 100.0%; height: 100.0%;"><b>Bunker Museum Hanstholm</b><br>A World War II museum with bunkers and historical exhibitions.<br><a href='https://museumscenterhanstholm.dk/en' target='_blank'>More info</a></div>`)[0];
+                popup_1292625334d15b075b3c7fbdbf912b92.setContent(html_030e18aa8df2f2dc3e4f9d6e6f9bea00);
+            
+        
+
+        marker_d27535271eb32d9c7270d16c7841698f.bindPopup(popup_1292625334d15b075b3c7fbdbf912b92)
+        ;
+
+        
+    
+    
+            marker_d27535271eb32d9c7270d16c7841698f.bindTooltip(
+                `<div>
+                     Bunker Museum Hanstholm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32ba64c4248da30a4b1fea45d7e7acae = L.marker(
+                [57.423, 10.484],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_87bb3caafc5457152be1d269e10e0656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32ba64c4248da30a4b1fea45d7e7acae.setIcon(icon_87bb3caafc5457152be1d269e10e0656);
+        
+    
+        var popup_bc390e2d7648db7e2694d007b9c3de64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_453aeb5db4442d7a32c589e474a8582e = $(`<div id="html_453aeb5db4442d7a32c589e474a8582e" style="width: 100.0%; height: 100.0%;"><b>Knivholt Hovedgaard</b><br>A historic manor house with various events and horse riding activities.<br><a href='https://knivholt.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_bc390e2d7648db7e2694d007b9c3de64.setContent(html_453aeb5db4442d7a32c589e474a8582e);
+            
+        
+
+        marker_32ba64c4248da30a4b1fea45d7e7acae.bindPopup(popup_bc390e2d7648db7e2694d007b9c3de64)
+        ;
+
+        
+    
+    
+            marker_32ba64c4248da30a4b1fea45d7e7acae.bindTooltip(
+                `<div>
+                     Knivholt Hovedgaard
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0fca7c5cf2dc58957d117ff3bd13084 = L.marker(
+                [56.169, 9.544],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_e6757d8c5fa9f1a0f1a0cae7029c7767 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0fca7c5cf2dc58957d117ff3bd13084.setIcon(icon_e6757d8c5fa9f1a0f1a0cae7029c7767);
+        
+    
+        var popup_55f038c6f3d7252ea0b87f59c7f9ecb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44db0e284bb56eacc78aa3ba063528c7 = $(`<div id="html_44db0e284bb56eacc78aa3ba063528c7" style="width: 100.0%; height: 100.0%;"><b>Silkeborg Bike Rental</b><br>Rent bikes and explore the scenic mountain biking trails in Silkeborg.<br><a href='https://www.silkeborgbike.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_55f038c6f3d7252ea0b87f59c7f9ecb8.setContent(html_44db0e284bb56eacc78aa3ba063528c7);
+            
+        
+
+        marker_f0fca7c5cf2dc58957d117ff3bd13084.bindPopup(popup_55f038c6f3d7252ea0b87f59c7f9ecb8)
+        ;
+
+        
+    
+    
+            marker_f0fca7c5cf2dc58957d117ff3bd13084.bindTooltip(
+                `<div>
+                     Silkeborg Bike Rental
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86009554f47a2530a9a143088d6ea7ee = L.marker(
+                [55.328, 8.766],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_fc3f82fc17231f77e3a4b787b980a977 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86009554f47a2530a9a143088d6ea7ee.setIcon(icon_fc3f82fc17231f77e3a4b787b980a977);
+        
+    
+        var popup_ce281b2c8e5f75b0e80f38cb8b8217fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee665aa9ba0684d8e240669cf5c8678f = $(`<div id="html_ee665aa9ba0684d8e240669cf5c8678f" style="width: 100.0%; height: 100.0%;"><b>Ribe</b><br>Denmark's oldest town with charming streets, historic buildings, and unique shops and cafes.<br><a href='https://www.visitribe.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_ce281b2c8e5f75b0e80f38cb8b8217fb.setContent(html_ee665aa9ba0684d8e240669cf5c8678f);
+            
+        
+
+        marker_86009554f47a2530a9a143088d6ea7ee.bindPopup(popup_ce281b2c8e5f75b0e80f38cb8b8217fb)
+        ;
+
+        
+    
+    
+            marker_86009554f47a2530a9a143088d6ea7ee.bindTooltip(
+                `<div>
+                     Ribe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9b43625775f5b3d968c79fdaa8c1c08 = L.marker(
+                [57.247, 9.595],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_79efa3520a40047beee1a9b2845ab249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9b43625775f5b3d968c79fdaa8c1c08.setIcon(icon_79efa3520a40047beee1a9b2845ab249);
+        
+    
+        var popup_00ba44ce5eda2c69cd51903b70328385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7305270c3ee766eca9dc62c05c2ed0b6 = $(`<div id="html_7305270c3ee766eca9dc62c05c2ed0b6" style="width: 100.0%; height: 100.0%;"><b>Blokhus Beach</b><br>A beautiful beach for swimming and family activities.<br><a href='https://www.visitnordjylland.com/north-jutland/plan-your-trip/blokhus-beach-gdk651186' target='_blank'>More info</a></div>`)[0];
+                popup_00ba44ce5eda2c69cd51903b70328385.setContent(html_7305270c3ee766eca9dc62c05c2ed0b6);
+            
+        
+
+        marker_c9b43625775f5b3d968c79fdaa8c1c08.bindPopup(popup_00ba44ce5eda2c69cd51903b70328385)
+        ;
+
+        
+    
+    
+            marker_c9b43625775f5b3d968c79fdaa8c1c08.bindTooltip(
+                `<div>
+                     Blokhus Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_538b9e2ff1ff30496eb767c5a6f7ec7a = L.marker(
+                [56.162, 10.203],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_66c7980070c3ee1c3825f9c420501446 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_538b9e2ff1ff30496eb767c5a6f7ec7a.setIcon(icon_66c7980070c3ee1c3825f9c420501446);
+        
+    
+        var popup_aea637148b0d61db3b41d4faa2257495 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb91223cd2086a08a40defff2e9ed247 = $(`<div id="html_cb91223cd2086a08a40defff2e9ed247" style="width: 100.0%; height: 100.0%;"><b>Aarhus</b><br>A vibrant city with attractions like ARoS Aarhus Art Museum and The Old Town (Den Gamle By).<br><a href='https://www.visitaarhus.com/' target='_blank'>More info</a></div>`)[0];
+                popup_aea637148b0d61db3b41d4faa2257495.setContent(html_cb91223cd2086a08a40defff2e9ed247);
+            
+        
+
+        marker_538b9e2ff1ff30496eb767c5a6f7ec7a.bindPopup(popup_aea637148b0d61db3b41d4faa2257495)
+        ;
+
+        
+    
+    
+            marker_538b9e2ff1ff30496eb767c5a6f7ec7a.bindTooltip(
+                `<div>
+                     Aarhus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9deaa7ba1b95e218995844bcb1e81231 = L.marker(
+                [56.803, 9.836],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_a9988fd11806d4e895cf020c7c931b36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9deaa7ba1b95e218995844bcb1e81231.setIcon(icon_a9988fd11806d4e895cf020c7c931b36);
+        
+    
+        var popup_cd41081068710495b3837d53a299d555 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23af30b121864a4a1e2a862b6ce16361 = $(`<div id="html_23af30b121864a4a1e2a862b6ce16361" style="width: 100.0%; height: 100.0%;"><b>Rebild National Park</b><br>A national park known for its scenic hills and beautiful nature.<br><a href='https://www.visitrebild.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_cd41081068710495b3837d53a299d555.setContent(html_23af30b121864a4a1e2a862b6ce16361);
+            
+        
+
+        marker_9deaa7ba1b95e218995844bcb1e81231.bindPopup(popup_cd41081068710495b3837d53a299d555)
+        ;
+
+        
+    
+    
+            marker_9deaa7ba1b95e218995844bcb1e81231.bindTooltip(
+                `<div>
+                     Rebild National Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ace7ada13f4bc74de6f6375b7849b06 = L.marker(
+                [57.077, 9.904],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_24bb3b6e4b9662b67c3b7d062477ef55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6ace7ada13f4bc74de6f6375b7849b06.setIcon(icon_24bb3b6e4b9662b67c3b7d062477ef55);
+        
+    
+        var popup_76d4dceae782939eeb3e0dcdc2702fbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_180a36b6db98b7e9a5169731b872741e = $(`<div id="html_180a36b6db98b7e9a5169731b872741e" style="width: 100.0%; height: 100.0%;"><b>Lindholm Høje</b><br>An ancient Viking burial site and museum.<br><a href='https://nordmus.dk/lindholm-hoeje-museum' target='_blank'>More info</a></div>`)[0];
+                popup_76d4dceae782939eeb3e0dcdc2702fbc.setContent(html_180a36b6db98b7e9a5169731b872741e);
+            
+        
+
+        marker_6ace7ada13f4bc74de6f6375b7849b06.bindPopup(popup_76d4dceae782939eeb3e0dcdc2702fbc)
+        ;
+
+        
+    
+    
+            marker_6ace7ada13f4bc74de6f6375b7849b06.bindTooltip(
+                `<div>
+                     Lindholm Høje
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c04361a359a7900c9eb32956e10835d2 = L.marker(
+                [57.416, 10.517],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_dc57c64b32c60953a604c67e405e2e04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c04361a359a7900c9eb32956e10835d2.setIcon(icon_dc57c64b32c60953a604c67e405e2e04);
+        
+    
+        var popup_5315c948b4f13eb4d04b5a6b169029cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f366ce2df18fa8230ae0d7280dd0f1f = $(`<div id="html_7f366ce2df18fa8230ae0d7280dd0f1f" style="width: 100.0%; height: 100.0%;"><b>Bangsbo Fort</b><br>A historic fort with WWII bunkers and stunning views.<br><a href='https://www.bangsbo.com/fort.html' target='_blank'>More info</a></div>`)[0];
+                popup_5315c948b4f13eb4d04b5a6b169029cf.setContent(html_7f366ce2df18fa8230ae0d7280dd0f1f);
+            
+        
+
+        marker_c04361a359a7900c9eb32956e10835d2.bindPopup(popup_5315c948b4f13eb4d04b5a6b169029cf)
+        ;
+
+        
+    
+    
+            marker_c04361a359a7900c9eb32956e10835d2.bindTooltip(
+                `<div>
+                     Bangsbo Fort
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bb5fc0e005965438f9fb691e7f0092f = L.marker(
+                [57.577, 10.423],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_5cb7527a43c8f287f77a7dd53ae98373 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5bb5fc0e005965438f9fb691e7f0092f.setIcon(icon_5cb7527a43c8f287f77a7dd53ae98373);
+        
+    
+        var popup_f41955bf5d39a8dd2450940ce59bf2ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2389d5ad1cd6ecb3370289ee037ed7b9 = $(`<div id="html_2389d5ad1cd6ecb3370289ee037ed7b9" style="width: 100.0%; height: 100.0%;"><b>Örnereservatet (Eagle World)</b><br>A sanctuary dedicated to the conservation and education about eagles.<br><a href='https://www.eagleworld.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_f41955bf5d39a8dd2450940ce59bf2ce.setContent(html_2389d5ad1cd6ecb3370289ee037ed7b9);
+            
+        
+
+        marker_5bb5fc0e005965438f9fb691e7f0092f.bindPopup(popup_f41955bf5d39a8dd2450940ce59bf2ce)
+        ;
+
+        
+    
+    
+            marker_5bb5fc0e005965438f9fb691e7f0092f.bindTooltip(
+                `<div>
+                     Örnereservatet (Eagle World)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd38d362b4350788e50085296e94b531 = L.marker(
+                [56.162, 10.203],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_d873de9c27dc8f8b12b2ab9d49040439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd38d362b4350788e50085296e94b531.setIcon(icon_d873de9c27dc8f8b12b2ab9d49040439);
+        
+    
+        var popup_2414526fa6d8d22dcf7b0131fbf32738 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06241067c8c4f7da73d0015ba921abdf = $(`<div id="html_06241067c8c4f7da73d0015ba921abdf" style="width: 100.0%; height: 100.0%;"><b>Den Gamle By (The Old Town)</b><br>An open-air museum showcasing Danish urban history and culture.<br><a href='https://www.dengamleby.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_2414526fa6d8d22dcf7b0131fbf32738.setContent(html_06241067c8c4f7da73d0015ba921abdf);
+            
+        
+
+        marker_fd38d362b4350788e50085296e94b531.bindPopup(popup_2414526fa6d8d22dcf7b0131fbf32738)
+        ;
+
+        
+    
+    
+            marker_fd38d362b4350788e50085296e94b531.bindTooltip(
+                `<div>
+                     Den Gamle By (The Old Town)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_760c2e52bf63d3b4ca6e910f9b3c0cd3 = L.marker(
+                [57.03, 8.485],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_2a3ebd2264abb40475cda492389ee77a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_760c2e52bf63d3b4ca6e910f9b3c0cd3.setIcon(icon_2a3ebd2264abb40475cda492389ee77a);
+        
+    
+        var popup_e5d446163439b6cb5e39f141ba017f2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6450e4b10b1c2da02dc544a99f6115a = $(`<div id="html_a6450e4b10b1c2da02dc544a99f6115a" style="width: 100.0%; height: 100.0%;"><b>Thy National Park</b><br>Denmark's oldest national park known for its unique landscapes and wildlife.<br><a href='https://www.nationalparkthy.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_e5d446163439b6cb5e39f141ba017f2e.setContent(html_a6450e4b10b1c2da02dc544a99f6115a);
+            
+        
+
+        marker_760c2e52bf63d3b4ca6e910f9b3c0cd3.bindPopup(popup_e5d446163439b6cb5e39f141ba017f2e)
+        ;
+
+        
+    
+    
+            marker_760c2e52bf63d3b4ca6e910f9b3c0cd3.bindTooltip(
+                `<div>
+                     Thy National Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83d72c4e83afbf991eaeb1ef909c9b58 = L.marker(
+                [56.908, 8.933],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_6e1ff6970ac7f429be8b55f56ff6aaa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83d72c4e83afbf991eaeb1ef909c9b58.setIcon(icon_6e1ff6970ac7f429be8b55f56ff6aaa0);
+        
+    
+        var popup_743fd3e29cf11f0988fbe4d76aa04454 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3bc1d0c17a86646a4937ae4f0c0e3c6 = $(`<div id="html_e3bc1d0c17a86646a4937ae4f0c0e3c6" style="width: 100.0%; height: 100.0%;"><b>Jesperhus Flower Park</b><br>A family-friendly park with beautiful gardens, a zoo, and an amusement park.<br><a href='https://www.jesperhus.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_743fd3e29cf11f0988fbe4d76aa04454.setContent(html_e3bc1d0c17a86646a4937ae4f0c0e3c6);
+            
+        
+
+        marker_83d72c4e83afbf991eaeb1ef909c9b58.bindPopup(popup_743fd3e29cf11f0988fbe4d76aa04454)
+        ;
+
+        
+    
+    
+            marker_83d72c4e83afbf991eaeb1ef909c9b58.bindTooltip(
+                `<div>
+                     Jesperhus Flower Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5ab07494aedef182eae77d3623824cd = L.marker(
+                [56.774, 8.252],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_35790a8bb21122edf73bb5087345e656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5ab07494aedef182eae77d3623824cd.setIcon(icon_35790a8bb21122edf73bb5087345e656);
+        
+    
+        var popup_3f83a2a692b858981f255e7ed7c80170 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3774f3e61ab6d71e74a1c20526af12a1 = $(`<div id="html_3774f3e61ab6d71e74a1c20526af12a1" style="width: 100.0%; height: 100.0%;"><b>Lodbjerg Lighthouse</b><br>A historic lighthouse offering panoramic views of the North Sea.<br><a href='https://www.visitnordjylland.com/north-jutland/plan-your-trip/lodbjerg-lighthouse-gdk597469' target='_blank'>More info</a></div>`)[0];
+                popup_3f83a2a692b858981f255e7ed7c80170.setContent(html_3774f3e61ab6d71e74a1c20526af12a1);
+            
+        
+
+        marker_c5ab07494aedef182eae77d3623824cd.bindPopup(popup_3f83a2a692b858981f255e7ed7c80170)
+        ;
+
+        
+    
+    
+            marker_c5ab07494aedef182eae77d3623824cd.bindTooltip(
+                `<div>
+                     Lodbjerg Lighthouse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7693d2434500bc558677e1b6f0b4e893 = L.marker(
+                [56.762, 8.239],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_d7625f4b4ef799372fad370b6f5a5e5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7693d2434500bc558677e1b6f0b4e893.setIcon(icon_d7625f4b4ef799372fad370b6f5a5e5f);
+        
+    
+        var popup_c86b1163a528a0ccb77ada85ff5237d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7be146b97986fdf45c5fd1db0453198b = $(`<div id="html_7be146b97986fdf45c5fd1db0453198b" style="width: 100.0%; height: 100.0%;"><b>Agger Tange</b><br>A scenic nature reserve perfect for bird watching and hiking.<br><a href='https://www.visitthy.dk/thy/planlaeg-din-tur/agger-tange-gdk597215' target='_blank'>More info</a></div>`)[0];
+                popup_c86b1163a528a0ccb77ada85ff5237d5.setContent(html_7be146b97986fdf45c5fd1db0453198b);
+            
+        
+
+        marker_7693d2434500bc558677e1b6f0b4e893.bindPopup(popup_c86b1163a528a0ccb77ada85ff5237d5)
+        ;
+
+        
+    
+    
+            marker_7693d2434500bc558677e1b6f0b4e893.bindTooltip(
+                `<div>
+                     Agger Tange
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59f8bb2278487db395a940bbb1ff046b = L.marker(
+                [56.905, 8.371],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_a64fa7596c88aa728238e94f7606c291 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59f8bb2278487db395a940bbb1ff046b.setIcon(icon_a64fa7596c88aa728238e94f7606c291);
+        
+    
+        var popup_50ca9338e01d331bb782520331bf2992 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78ce90dc8de85ae51c4717dd804cdfaa = $(`<div id="html_78ce90dc8de85ae51c4717dd804cdfaa" style="width: 100.0%; height: 100.0%;"><b>Vorupør Museum</b><br>A museum showcasing the local history and fishing culture of Vorupør.<br><a href='https://kystmuseet.dk/vorupoer/' target='_blank'>More info</a></div>`)[0];
+                popup_50ca9338e01d331bb782520331bf2992.setContent(html_78ce90dc8de85ae51c4717dd804cdfaa);
+            
+        
+
+        marker_59f8bb2278487db395a940bbb1ff046b.bindPopup(popup_50ca9338e01d331bb782520331bf2992)
+        ;
+
+        
+    
+    
+            marker_59f8bb2278487db395a940bbb1ff046b.bindTooltip(
+                `<div>
+                     Vorupør Museum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c6f4d9b07691075429e07e25e7940d8 = L.marker(
+                [56.951, 8.699],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_0d9297b3749fed0f212c1c12fb176b79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4c6f4d9b07691075429e07e25e7940d8.setIcon(icon_0d9297b3749fed0f212c1c12fb176b79);
+        
+    
+        var popup_25408db1eafb1ea80f0616526eaadab0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8aac588aaee719241c1d1a1e79dd387e = $(`<div id="html_8aac588aaee719241c1d1a1e79dd387e" style="width: 100.0%; height: 100.0%;"><b>Restaurant Amstrup & Vigen</b><br>Affordable local cuisine with a cozy atmosphere.<br><a href='https://www.amstrup-vigen.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_25408db1eafb1ea80f0616526eaadab0.setContent(html_8aac588aaee719241c1d1a1e79dd387e);
+            
+        
+
+        marker_4c6f4d9b07691075429e07e25e7940d8.bindPopup(popup_25408db1eafb1ea80f0616526eaadab0)
+        ;
+
+        
+    
+    
+            marker_4c6f4d9b07691075429e07e25e7940d8.bindTooltip(
+                `<div>
+                     Restaurant Amstrup & Vigen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19dd4e7f70c9811f14b771b3760d41e4 = L.marker(
+                [56.958, 8.693],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_97adbc3ec23398669c6f274abe4fee65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_19dd4e7f70c9811f14b771b3760d41e4.setIcon(icon_97adbc3ec23398669c6f274abe4fee65);
+        
+    
+        var popup_047c4d6780e41eec169e70c0e2a05bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e7b89f272fb9be1edcbbfa8b356129e = $(`<div id="html_0e7b89f272fb9be1edcbbfa8b356129e" style="width: 100.0%; height: 100.0%;"><b>Café Baghuset</b><br>A charming café offering delicious meals and beverages.<br><a href='https://www.cafebaghuset.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_047c4d6780e41eec169e70c0e2a05bd0.setContent(html_0e7b89f272fb9be1edcbbfa8b356129e);
+            
+        
+
+        marker_19dd4e7f70c9811f14b771b3760d41e4.bindPopup(popup_047c4d6780e41eec169e70c0e2a05bd0)
+        ;
+
+        
+    
+    
+            marker_19dd4e7f70c9811f14b771b3760d41e4.bindTooltip(
+                `<div>
+                     Café Baghuset
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7cd1f143f2544f95ae442a622a29137 = L.marker(
+                [57.118, 8.617],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_2d78946cede9126255635c33be96c63a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f7cd1f143f2544f95ae442a622a29137.setIcon(icon_2d78946cede9126255635c33be96c63a);
+        
+    
+        var popup_41daa6e6ca733bafd2f4a8315de6f73b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_267871ea94ce56b2c511615fd9329adc = $(`<div id="html_267871ea94ce56b2c511615fd9329adc" style="width: 100.0%; height: 100.0%;"><b>Hanstholm Madbar</b><br>Casual dining with fresh seafood and local dishes.<br><a href='https://www.hanstholmmadbar.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_41daa6e6ca733bafd2f4a8315de6f73b.setContent(html_267871ea94ce56b2c511615fd9329adc);
+            
+        
+
+        marker_f7cd1f143f2544f95ae442a622a29137.bindPopup(popup_41daa6e6ca733bafd2f4a8315de6f73b)
+        ;
+
+        
+    
+    
+            marker_f7cd1f143f2544f95ae442a622a29137.bindTooltip(
+                `<div>
+                     Hanstholm Madbar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce0b1e9ec85cbd0db08367ff59545f3c = L.marker(
+                [57.046, 9.923],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_ad7a83c53eeaffacc6b7b78470679b1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ce0b1e9ec85cbd0db08367ff59545f3c.setIcon(icon_ad7a83c53eeaffacc6b7b78470679b1e);
+        
+    
+        var popup_97a62c7bfa1ee7721f2484a4d0050adf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_344348901bee8bea204f063822face37 = $(`<div id="html_344348901bee8bea204f063822face37" style="width: 100.0%; height: 100.0%;"><b>Caféministeriet</b><br>Cozy café with a variety of affordable meals and drinks.<br><a href='https://www.cafeministeriet.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_97a62c7bfa1ee7721f2484a4d0050adf.setContent(html_344348901bee8bea204f063822face37);
+            
+        
+
+        marker_ce0b1e9ec85cbd0db08367ff59545f3c.bindPopup(popup_97a62c7bfa1ee7721f2484a4d0050adf)
+        ;
+
+        
+    
+    
+            marker_ce0b1e9ec85cbd0db08367ff59545f3c.bindTooltip(
+                `<div>
+                     Caféministeriet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8b862f291c6f88a28c031baad775107 = L.marker(
+                [57.046, 9.915],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_e14f8d1abef31ffd541657d52d5f6811 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c8b862f291c6f88a28c031baad775107.setIcon(icon_e14f8d1abef31ffd541657d52d5f6811);
+        
+    
+        var popup_87dc2a5738bc4adbd7fc65996b360c8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2011c64d47d1bb215fffc5d229b43f8 = $(`<div id="html_c2011c64d47d1bb215fffc5d229b43f8" style="width: 100.0%; height: 100.0%;"><b>Penny Lane Café</b><br>Charming café with delicious pastries and light meals.<br><a href='https://www.pennylanecafe.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_87dc2a5738bc4adbd7fc65996b360c8a.setContent(html_c2011c64d47d1bb215fffc5d229b43f8);
+            
+        
+
+        marker_c8b862f291c6f88a28c031baad775107.bindPopup(popup_87dc2a5738bc4adbd7fc65996b360c8a)
+        ;
+
+        
+    
+    
+            marker_c8b862f291c6f88a28c031baad775107.bindTooltip(
+                `<div>
+                     Penny Lane Café
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e04851bd3784b97eb56407db633ed6a = L.marker(
+                [57.048, 9.919],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_e799d0e2171f11d4252d3eeee25d3ee7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8e04851bd3784b97eb56407db633ed6a.setIcon(icon_e799d0e2171f11d4252d3eeee25d3ee7);
+        
+    
+        var popup_6d3c04e4096044fdcf04c951c348fddf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4ed918d63bd86601423147a471b153e = $(`<div id="html_f4ed918d63bd86601423147a471b153e" style="width: 100.0%; height: 100.0%;"><b>WeDo Burgers</b><br>Affordable and tasty burgers in the heart of Ålborg.<br><a href='https://www.wedoburgers.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_6d3c04e4096044fdcf04c951c348fddf.setContent(html_f4ed918d63bd86601423147a471b153e);
+            
+        
+
+        marker_8e04851bd3784b97eb56407db633ed6a.bindPopup(popup_6d3c04e4096044fdcf04c951c348fddf)
+        ;
+
+        
+    
+    
+            marker_8e04851bd3784b97eb56407db633ed6a.bindTooltip(
+                `<div>
+                     WeDo Burgers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09766ec05cf434c50a5b3f578d8753ee = L.marker(
+                [57.048, 9.924],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_4cb7d0e9d9a1eab1732496ca2661bebd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_09766ec05cf434c50a5b3f578d8753ee.setIcon(icon_4cb7d0e9d9a1eab1732496ca2661bebd);
+        
+    
+        var popup_ee1fb979b5ba6e88f69fc2710cf3ed8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_439bbe4ea450939c1f424c0d41c0829d = $(`<div id="html_439bbe4ea450939c1f424c0d41c0829d" style="width: 100.0%; height: 100.0%;"><b>Abbey Road Café</b><br>Friendly café with a Beatles theme, offering good food and coffee.<br><a href='https://www.abbeyroad.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_ee1fb979b5ba6e88f69fc2710cf3ed8f.setContent(html_439bbe4ea450939c1f424c0d41c0829d);
+            
+        
+
+        marker_09766ec05cf434c50a5b3f578d8753ee.bindPopup(popup_ee1fb979b5ba6e88f69fc2710cf3ed8f)
+        ;
+
+        
+    
+    
+            marker_09766ec05cf434c50a5b3f578d8753ee.bindTooltip(
+                `<div>
+                     Abbey Road Café
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd9312690a2241816dd82f91869b6d61 = L.marker(
+                [57.044, 9.899],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_91b249aecc0643ce6015f2ab44e3224b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_dd9312690a2241816dd82f91869b6d61.setIcon(icon_91b249aecc0643ce6015f2ab44e3224b);
+        
+    
+        var popup_62ddd53240403ad6a1928d18c51ce0d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f943f8173cc3f2756708598456f7580 = $(`<div id="html_9f943f8173cc3f2756708598456f7580" style="width: 100.0%; height: 100.0%;"><b>AirBnB #1</b><br>AirBnB #1<br><a href='#' target='_blank'>More info</a></div>`)[0];
+                popup_62ddd53240403ad6a1928d18c51ce0d7.setContent(html_9f943f8173cc3f2756708598456f7580);
+            
+        
+
+        marker_dd9312690a2241816dd82f91869b6d61.bindPopup(popup_62ddd53240403ad6a1928d18c51ce0d7)
+        ;
+
+        
+    
+    
+            marker_dd9312690a2241816dd82f91869b6d61.bindTooltip(
+                `<div>
+                     AirBnB #1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0c9413b631759fad972ea9690f78407 = L.marker(
+                [56.964, 9.257],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_6822b6609df6544258aab132358ae530 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e0c9413b631759fad972ea9690f78407.setIcon(icon_6822b6609df6544258aab132358ae530);
+        
+    
+        var popup_3d38174638650f41942314bd74244247 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd8166824f1ddac94bd57d5d503c0c6f = $(`<div id="html_dd8166824f1ddac94bd57d5d503c0c6f" style="width: 100.0%; height: 100.0%;"><b>AirBnB #2</b><br>AirBnB #2<br><a href='#' target='_blank'>More info</a></div>`)[0];
+                popup_3d38174638650f41942314bd74244247.setContent(html_dd8166824f1ddac94bd57d5d503c0c6f);
+            
+        
+
+        marker_e0c9413b631759fad972ea9690f78407.bindPopup(popup_3d38174638650f41942314bd74244247)
+        ;
+
+        
+    
+    
+            marker_e0c9413b631759fad972ea9690f78407.bindTooltip(
+                `<div>
+                     AirBnB #2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a6fc33fe7517b2635d0066845b8c02e = L.marker(
+                [57.119, 8.618],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_a5de78183b984c8f10980f106fc4c18c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4a6fc33fe7517b2635d0066845b8c02e.setIcon(icon_a5de78183b984c8f10980f106fc4c18c);
+        
+    
+        var popup_7747c271d453512407617cfe17e5aa09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d10e5dcf66cec0913d13ea4c02261f7 = $(`<div id="html_1d10e5dcf66cec0913d13ea4c02261f7" style="width: 100.0%; height: 100.0%;"><b>Bunker Museum Hanstholm</b><br>A World War II museum with bunkers and historical exhibitions.<br><a href='https://museumscenterhanstholm.dk/en' target='_blank'>More info</a></div>`)[0];
+                popup_7747c271d453512407617cfe17e5aa09.setContent(html_1d10e5dcf66cec0913d13ea4c02261f7);
+            
+        
+
+        marker_4a6fc33fe7517b2635d0066845b8c02e.bindPopup(popup_7747c271d453512407617cfe17e5aa09)
+        ;
+
+        
+    
+    
+            marker_4a6fc33fe7517b2635d0066845b8c02e.bindTooltip(
+                `<div>
+                     Bunker Museum Hanstholm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc7b84d42445e4979783bbacbf9a77ea = L.marker(
+                [57.049, 9.888],
+                {}
+            ).addTo(map_12d0bcdbbf6304aa59eed02d610f550e);
+        
+    
+            var icon_38fc455fa90306f235aec95633cda8e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc7b84d42445e4979783bbacbf9a77ea.setIcon(icon_38fc455fa90306f235aec95633cda8e7);
+        
+    
+        var popup_97beceefe90a63b604f8c3d30a156f67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39a640b842d9d493b73c43bd97150ad6 = $(`<div id="html_39a640b842d9d493b73c43bd97150ad6" style="width: 100.0%; height: 100.0%;"><b>Springeren - Maritime Experience Centre</b><br>A maritime museum featuring historic ships, exhibits, and interactive activities.<br><a href='https://springeren-maritimt.dk/' target='_blank'>More info</a></div>`)[0];
+                popup_97beceefe90a63b604f8c3d30a156f67.setContent(html_39a640b842d9d493b73c43bd97150ad6);
+            
+        
+
+        marker_cc7b84d42445e4979783bbacbf9a77ea.bindPopup(popup_97beceefe90a63b604f8c3d30a156f67)
+        ;
+
+        
+    
+    
+            marker_cc7b84d42445e4979783bbacbf9a77ea.bindTooltip(
+                `<div>
+                     Springeren - Maritime Experience Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
